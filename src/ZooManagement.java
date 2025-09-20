@@ -1,8 +1,11 @@
 import java.util.Scanner;
 
 public class ZooManagement {
+
+
+
     public static void main(String[] args) {
-        int nbrCages = 20;
+        int nbrCages = 0;
         String zooName = "my zoo";
         System.out.println(zooName + " comporte " + nbrCages + " cages");
         Scanner sc = new Scanner(System.in);
@@ -17,7 +20,12 @@ public class ZooManagement {
         } else {
             System.out.println(zooName + " comporte " + nbrCages + " cages");
         }
-
+        Animal tiger = new Animal("tigers", "tiger" , 36 , false );
+        Animal poo = new Animal( "poo" , "pp" , 26 , true );
+        Zoo africa = new Zoo( "poo" , "africa" , 21 );
+        africa.displayZoo();
+        System.out.println(tiger);
+        System.out.println(africa.toString());
         sc.close();
     }
 }
